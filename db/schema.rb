@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160827220535) do
+ActiveRecord::Schema.define(version: 20160914043045) do
 
   create_table "comments", force: true do |t|
     t.string   "owner"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20160827220535) do
     t.string   "last_name"
     t.string   "email"
     t.string   "password_digest"
+    t.string   "password_confirmation"
   end
 
 end
