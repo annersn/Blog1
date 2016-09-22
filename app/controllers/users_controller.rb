@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+	before_action :login_redirect, only: [:new]
 	def new
 		@user = User.new
 	end
